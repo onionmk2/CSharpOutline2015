@@ -1,14 +1,14 @@
 ﻿<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="CSharpOutline2015.Skyblade.3003efc7-c6f4-4da3-952e-32644a07ef0f" Version="1.0.2" Publisher="Skyblade" Language="en-US" />
-    <DisplayName>C# outline 2015</DisplayName>
+    <Identity Id="CSharpOutline2015-2017.Skyblade.3003efc7-c6f4-4da3-952e-32644a07ef0f" Version="1.0.3" Publisher="Skyblade" Language="en-US" />
+    <DisplayName>C# outline 2015-17</DisplayName>
     <Description>Adds all braces {} outlining for C# editor.</Description>
   </Metadata>
   <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.IntegratedShell" Version="[14.0]" />
-    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[14.0]" />
-    <InstallationTarget Id="Microsoft.VisualStudio.Premium" Version="[14.0]" />
-    <InstallationTarget Id="Microsoft.VisualStudio.Ultimate" Version="[14.0]" />
+    <InstallationTarget Id="Microsoft.VisualStudio.IntegratedShell" Version="[14.0, 18.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[14.0, 18.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Premium" Version="[14.0, 18.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Ultimate" Version="[14.0, 18.0)" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
@@ -16,4 +16,7 @@
   <Assets>
     <Asset Type="Microsoft.VisualStudio.MefComponent" Path="CSharpOutline.dll" />
   </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[14.0,18.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
 </PackageManifest>
